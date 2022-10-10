@@ -1,0 +1,232 @@
+/* Основний колір тексту #757575 */
+/* Другорядний колір тексту #212121 */
+/* Білий #FFFFFF*/
+/* Чорний #000000/
+/* Синій #2196F3 */
+/* Акцент #2196F3*/
+/* Колір фону героя #2F303A  */
+/* Другорядний колір фону #F5F4FA  */
+
+
+:root{
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent: #2196F3;
+    --hero-background-color: #2F303A;
+    --secondary-background-color: #F5F4FA;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --bhero-button-active:#188CE8;
+   
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Хедер */
+.logo{
+    color: var(--accent);
+    font-family: Raleway;
+            font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        text-decoration: none;
+}
+
+.logo-title-black{
+    color: var(--black-color);
+}
+
+
+.site-nav .linc {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+}
+
+.site-nav .linc:hover, 
+.site-nav .linc:focus {
+color: var(--accent);
+}
+
+
+.site-nav .linc.current {
+    color: var(--accent);
+}
+
+.contact-nav .contact {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+}
+
+.contact-nav .contact:hover,
+.contact-nav .contact:focus{
+    color: var(--accent);
+}
+
+
+/* Футер */
+
+.footer{
+    background-color: var(--hero-background-color);
+}
+
+.title-logo-light{
+    color: var(--white-color);
+}
+
+.adress-nav{
+    font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+}
+
+.adress-nav .adress{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.adress-nav .adress:hover,
+.adress-nav .adress:focus{
+    color: var(--accent);
+}
+
+/* Герой */
+
+.hero{
+    color: var(--white-color);
+    background-color: var(--hero-background-color);
+}
+
+
+
+.hero-button{
+   color: var(--white-color);
+   background-color: var(--accent);
+   cursor: pointer;
+   font-family: inherit;
+}
+
+.hero-title{
+    font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-transform: uppercase
+}
+
+.hero-button:hover,
+.hero-button:focus{
+background-color:var(--bhero-button-active);
+}
+
+/* Наші особливості */
+
+.section-title{
+    color: var(--secondary-text-color);
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.element-title{
+    color: var(--secondary-text-color);
+    font-size: 14px;
+        line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.section .text{
+    font-size: 16px;
+        line-height: 1.19;
+}
+/* Чим ми займаємося */
+
+/* Наша команда */
+
+.section-team{
+    background-color: var(--secondary-background-color);
+}
+
+.fon-tim{
+    background: var(--white-color);
+}
+.tim-title {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+}
+
+.section-team .text-tim{
+    font-size: 16px;
+        line-height: 19px;
+}
+
+
+
+/* Нащі роботи */
+
+.filter-button{
+cursor: pointer;
+color: var(--secondary-text-color);
+background-color: var(--secondary-background-color);
+font-family: inherit;
+font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+ }
+
+.filter-button:hover,
+ .filter-button:focus{
+    color: var(--white-color);
+    background-color: var(--accent);
+ }
+
+.filter-button.current {
+    color: var(--white-color);
+    background-color: var(--accent);
+}
+.section-works .works-title {
+    color: var(--secondary-text-color);
+           font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+}
+
+
+.section-works .works-text{
+    font-size: 16px;
+        line-height: 1.9;
+}
+
+ 
