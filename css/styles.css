@@ -8,7 +8,7 @@
 /* Другорядний колір фону #F5F4FA  */
 
 
-html{
+html {
     box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@ html{
     box-sizing: inherit;
 }
 
-:root{
+:root {
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --accent: #2196F3;
@@ -26,15 +26,42 @@ html{
     --secondary-background-color: #F5F4FA;
     --white-color: #FFFFFF;
     --black-color: #000000;
-    --bhero-button-active:#188CE8;
-   
+    --bhero-button-active: #188CE8;
 }
+
+
 
 body {
     color: var(--primary-text-color);
     background-color: var(--white-color);
     font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
+}
+
+.container {
+    outline: 2px solid red;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.section{
+    padding: 94px;
+    background-color: gold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 .list {
@@ -42,16 +69,17 @@ body {
 }
 
 /* Хедер */
-.logo{
+.logo {
     color: var(--accent);
-    font-family: Raleway;
-            font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
-        text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
-.logo-title-black{
+.logo-title-black {
     color: var(--black-color);
 }
 
@@ -59,15 +87,15 @@ body {
 .site-nav .linc {
     color: var(--secondary-text-color);
     font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
-.site-nav .linc:hover, 
+.site-nav .linc:hover,
 .site-nav .linc:focus {
-color: var(--accent);
+    color: var(--accent);
 }
 
 
@@ -76,83 +104,100 @@ color: var(--accent);
 }
 
 .contact-nav .contact {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
 }
 
 .contact-nav .contact:hover,
-.contact-nav .contact:focus{
+.contact-nav .contact:focus {
     color: var(--accent);
 }
 
 
 /* Футер */
 
-.footer{
+.footer {
     background-color: var(--hero-background-color);
 }
 
-.title-logo-light{
+.title-logo-light {
     color: var(--white-color);
 }
 
-.adress-nav{
+.adress-nav {
     font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
-.adress-nav .adress{
-    color: var(--white-color);
+.adress-nav .adress {
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
 .adress-nav .adress:hover,
-.adress-nav .adress:focus{
+.adress-nav .adress:focus {
     color: var(--accent);
+}
+
+.adress-nav .map {
+    color: var(--white-color);
+    text-decoration: none;
 }
 
 /* Герой */
 
-.hero{
+.hero {
     color: var(--white-color);
     background-color: var(--hero-background-color);
 }
 
 
 
-.hero-button{
-   color: var(--white-color);
-   background-color: var(--accent);
-   cursor: pointer;
-   font-family: inherit;
+.hero-button {
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 32px;
+    color: var(--white-color);
+    background-color: var(--accent);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
 }
 
-.hero-title{
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-letter-spacing: 0.06em;
-text-transform: uppercase
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase
 }
 
 .hero-button:hover,
-.hero-button:focus{
-background-color:var(--bhero-button-active);
+.hero-button:focus {
+    background-color: var(--bhero-button-active);
 }
 
 /* Наші особливості */
 
-.section-title{
+.section-title {
     color: var(--secondary-text-color);
     font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -168,75 +213,82 @@ background-color:var(--bhero-button-active);
     margin: -1px;
 }
 
-.element-title{
+.element-title {
     color: var(--secondary-text-color);
     font-size: 14px;
-        line-height: 1.14;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.section .text{
+.section .text {
     font-size: 16px;
-        line-height: 1.19;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
+
 /* Чим ми займаємося */
 
 /* Наша команда */
 
-.section-team{
+.team {
     background-color: var(--secondary-background-color);
 }
 
-.fon-tim{
+.fon-tim {
     background: var(--white-color);
 }
+
 .tim-title {
     color: var(--secondary-text-color);
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
-.section-team .text-tim{
+.text-tim {
     font-size: 16px;
-        line-height: 19px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 
 
 /* Нащі роботи */
 
-.filter-button{
-cursor: pointer;
-color: var(--secondary-text-color);
-background-color: var(--secondary-background-color);
-font-family: inherit;
-font-weight: 500;
+.filter-button {
+    cursor: pointer;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
+    font-family: inherit;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
- }
+    letter-spacing: 0.03em;
+}
 
 .filter-button:hover,
- .filter-button:focus{
+.filter-button:focus {
     color: var(--white-color);
     background-color: var(--accent);
- }
+}
 
 .filter-button.current {
     color: var(--white-color);
     background-color: var(--accent);
 }
-.section-works .works-title {
+
+.works-title {
     color: var(--secondary-text-color);
-           font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 
-.section-works .works-text{
+.works-text {
     font-size: 16px;
-        line-height: 1.9;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
 }
-
- 
