@@ -7,49 +7,48 @@
 /* Колір фону героя #2F303A  */
 /* Другорядний колір фону #F5F4FA  */
 
-
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 :root {
-    --primary-text-color: #757575;
-    --secondary-text-color: #212121;
-    --accent: #2196F3;
-    --hero-background-color: #2F303A;
-    --secondary-background-color: #F5F4FA;
-    --white-color: #FFFFFF;
-    --black-color: #000000;
-    --bhero-button-active: #188CE8;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent: #2196f3;
+  --hero-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --bhero-button-active: #188ce8;
 }
 
-
-
 body {
-    color: var(--primary-text-color);
-    background-color: var(--white-color);
-    font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+  font-family: Roboto, sans-serif;
 }
 
 .container {
-       width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
-
+  outline: 2px solid red;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.section{
-    padding: 94px;
-    
+.section {
+  padding: 94px 0;
+  background-color: gold;
 }
+
+/* Утиліти */
 
 h1,
 h2,
@@ -59,253 +58,280 @@ h5,
 h6,
 p,
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Хедер */
+
+.heder-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.heder-nav {
+  display: flex;
+  align-items: center;
+}
+
+.contact-nav {
+  display: flex;
+}
+
 .logo {
-    color: var(--accent);
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+  /* align-items: center; */
+  color: var(--accent);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .logo-title-black {
-    color: var(--black-color);
+  color: var(--black-color);
 }
 
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  /* outline: 2px solid blue; */
+  margin-right: 50px;
+}
 
 .site-nav .linc {
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .linc:hover,
 .site-nav .linc:focus {
-    color: var(--accent);
+  color: var(--accent);
 }
 
-
 .site-nav .linc.current {
-    color: var(--accent);
+  color: var(--accent);
+}
+
+.contact-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-nav .contact {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .contact-nav .contact:hover,
 .contact-nav .contact:focus {
-    color: var(--accent);
+  color: var(--accent);
 }
-
 
 /* Футер */
 
 .footer {
-    background-color: var(--hero-background-color);
+  background-color: var(--hero-background-color);
 }
 
 .title-logo-light {
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 .adress-nav {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .adress-nav .adress {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 .adress-nav .adress:hover,
 .adress-nav .adress:focus {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .adress-nav .map {
-    color: var(--white-color);
-    text-decoration: none;
+  color: var(--white-color);
+  text-decoration: none;
 }
 
 /* Герой */
 
 .hero {
-    color: var(--white-color);
-    background-color: var(--hero-background-color);
-    text-align: center;
+  color: var(--white-color);
+  background-color: var(--hero-background-color);
+  text-align: center;
 }
 
-
-
 .hero-button {
-    border: 0;
-    border-radius: 4px;
-    padding: 10px 32px;
-    color: var(--white-color);
-    background-color: var(--accent);
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  color: var(--white-color);
+  background-color: var(--accent);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: var(--bhero-button-active);
+  background-color: var(--bhero-button-active);
 }
 
 /* Наші особливості */
 
 .section-title {
-    margin-bottom: 50px;
-    color: var(--secondary-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .element-title {
-    margin-bottom: 10px;
-    color: var(--secondary-text-color);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .section .text {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /* Чим ми займаємося */
 
 /* Наша команда */
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .team {
-    background-color: var(--secondary-background-color);
+  background-color: var(--secondary-background-color);
 }
 
 .fon-tim {
-    background: var(--white-color);
+  background: var(--white-color);
 }
 
 .tim-title {
-    margin-bottom: 10px;
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .text-tim {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
-.info-tim{
-    padding: 30px 0;
+.info-tim {
+  padding: 30px 0;
 }
-
 
 /* Нащі роботи */
 
 .filter-button {
-    cursor: pointer;
-    color: var(--secondary-text-color);
-    background-color: var(--secondary-background-color);
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
 }
 
 .filter-button:hover,
 .filter-button:focus {
-    color: var(--white-color);
-    background-color: var(--accent);
+  color: var(--white-color);
+  background-color: var(--accent);
 }
 
 .filter-button.current {
-    color: var(--white-color);
-    background-color: var(--accent);
+  color: var(--white-color);
+  background-color: var(--accent);
 }
 
 .works-title {
-    margin-bottom: 4px;
-    color: var(--secondary-text-color);
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
-
 
 .works-text {
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 
-.work-info{
-    padding: 20px 0;
+.work-info {
+  padding: 20px 0;
 }
