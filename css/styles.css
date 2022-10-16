@@ -408,8 +408,6 @@ img {
 .adress-nav .adress {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  padding-bottom: 7px;
-  padding-top: 7px;
 }
 
 .adress-nav .adress:hover,
